@@ -98,7 +98,6 @@ feature -FEATURE_ANTI_GRAVITY
 feature VBAT
 feature RX_SERIAL
 feature FAILSAFE
-feature LED_STRIP
 feature AIRMODE
 beeper GYRO_CALIBRATED
 beeper RX_LOST
@@ -220,8 +219,8 @@ mode_color 6 9 0
 mode_color 6 10 0
 mode_color 7 0 3
 aux 0 0 1 1700 2100
-aux 1 1 0 900 1300
-aux 2 0 0 900 900
+aux 1 1 0 900 1150
+aux 2 2 0 1300 1600
 aux 3 0 0 900 900
 aux 4 0 0 900 900
 aux 5 0 0 900 900
@@ -254,10 +253,10 @@ adjrange 11 0 0 900 900 0 0
 adjrange 12 0 0 900 900 0 0
 adjrange 13 0 0 900 900 0 0
 adjrange 14 0 0 900 900 0 0
-rxrange 0 890 2079
-rxrange 1 892 2085
-rxrange 2 948 2080
-rxrange 3 888 2085
+rxrange 0 1000 2000
+rxrange 1 1000 2000
+rxrange 2 1000 2000
+rxrange 3 1000 2000
 rxfail 0 a
 rxfail 1 a
 rxfail 2 a
@@ -278,8 +277,8 @@ rxfail 16 h
 rxfail 17 h
 set task_statistics = ON
 set mid_rc = 1500
-set min_check = 1100
-set max_check = 1900
+set min_check = 1038
+set max_check = 1960
 set rssi_channel = 0
 set rssi_scale = 30
 set rc_interp = AUTO
@@ -290,8 +289,8 @@ set input_filtering_mode = OFF
 set fpv_mix_degrees = 0
 set max_aux_channels = 14
 set debug_mode = NONE
-set min_throttle = 1070
-set max_throttle = 2000
+set min_throttle = 1050
+set max_throttle = 1900
 set min_command = 1000
 set digital_idle_percent =  4.500
 set 3d_deadband_low = 1406
@@ -333,10 +332,10 @@ set frsky_vfas_cell_voltage = OFF
 set hott_alarm_int = 5
 set pid_in_tlm = OFF
 set bat_capacity = 0
-set vbat_scale = 110
-set vbat_max_cell_voltage = 43
-set vbat_min_cell_voltage = 33
-set vbat_warning_cell_voltage = 35
+set vbat_scale = 0
+set vbat_max_cell_voltage = 0
+set vbat_min_cell_voltage = 0
+set vbat_warning_cell_voltage = 0
 set vbat_hysteresis = 1
 set ibat_scale = 400
 set ibat_offset = 0
@@ -368,8 +367,8 @@ set imu_dcm_kp = 2500
 set imu_dcm_ki = 0
 set alt_hold_deadband = 40
 set alt_hold_fast_change = ON
-set deadband = 0
-set yaw_deadband = 0
+set deadband = 6
+set yaw_deadband = 6
 set thr_corr_value = 0
 set thr_corr_angle = 800
 set yaw_control_direction = 1
@@ -384,7 +383,7 @@ set channel_forwarding_start = 4
 set airmode_start_throttle = 1350
 set failsafe_delay = 10
 set failsafe_off_delay = 10
-set failsafe_throttle = 1000
+set failsafe_throttle = 0
 set failsafe_kill_switch = OFF
 set failsafe_throttle_low_delay = 100
 set failsafe_procedure = DROP
