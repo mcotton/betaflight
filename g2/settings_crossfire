@@ -98,6 +98,7 @@ feature -FEATURE_ANTI_GRAVITY
 feature RX_PPM
 feature VBAT
 feature FAILSAFE
+feature TELEMETRY
 feature LED_STRIP
 feature AIRMODE
 beeper GYRO_CALIBRATED
@@ -319,7 +320,7 @@ set nav_speed_max = 300
 set nav_slew_rate = 30
 set beeper_inversion = ON
 set beeper_od = OFF
-set serialrx_provider = CRSF
+set serialrx_provider = SBUS
 set sbus_inversion = ON
 set tlm_switch = OFF
 set tlm_inversion = ON
